@@ -6,9 +6,10 @@ server:
 # database connection
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/auth_app
-    username: root
-    password: Dinesh@2026
+    url: jdbc:postgresql://localhost:5432/auth_app
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
 
   # JPA and Hibernate configuration
   jpa:
@@ -16,7 +17,7 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
     show-sql: true
 
