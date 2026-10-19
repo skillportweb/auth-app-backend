@@ -81,3 +81,7 @@ app:
     frontend:
       success-redirect: http://localhost:5173/oauth/success
       failure-redirect: http://localhost:5173/oauth/failure
+
+  # Product image upload folder
+  file:
+    upload-dir: uploads/products
